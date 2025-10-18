@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactgegevens</title>
+    <link rel="stylesheet" href="css/smth.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+</head>
+<body>
+    <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html"> My Projects</a>
+        <a class="nav-link" href="CV.html">CV</a>
+        <a class="nav-link" href="contact.html">Contact Me</a>
+        <a class="nav-link" href="aboutme.html">Over Mij</a>
+    </nav>
+    <h1>Contact Gegevens</h1>
+    <h2>Hieronder vind je mijn primaire contactgegevens en een contactformulier.</h2>
+    <div class="main">
+    <p>Je kunt contact met mij opnemen via de volgende kanalen:</p>
+    <ul>
+        <li>Email: nathan.schoeters@example.com</li>
+        <li>Telefoon: +32 487 45 21 0</li>
+        <li>LinkedIn: linkedin.com/in/nathan-schoeters</li>
+    </ul>
+    <p>Ik sta altijd open voor nieuwe kansen, samenwerkingen of gewoon een goed gesprek over technologie en webontwikkeling. Aarzel niet om contact op te nemen!</p>
+    </div>
+    <h3>Ook kan je onderstaande form invullen:</h3>
+    <form action="submit_form.php" method="post">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Verstuur</button>
+    </form>
+</body>
+</html>
