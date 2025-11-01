@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contactgegevens</title>
-    <link rel="stylesheet" href="css/smth.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="css/smth.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ceba2f3709.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <nav>
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="projects.html"> My Projects</a>
-        <a class="nav-link" href="CV.html">CV</a>
-        <a class="nav-link" href="contact.html">Contact Me</a>
-        <a class="nav-link" href="aboutme.html">Over Mij</a>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="projects.html"> My Projects</a>
+      <a class="nav-link" href="CV.html">CV</a>
+      <a class="nav-link" href="contact.html">Contact Me</a>
+      <a class="nav-link" href="aboutme.html">Over Mij</a>
     </nav>
     <h1>Contact Gegevens</h1>
-    <h2>Hieronder vind je mijn primaire contactgegevens en een contactformulier.</h2>
+    <h2>
+      Hieronder vind je mijn primaire contactgegevens en een contactformulier.
+    </h2>
     <div class="main">
-    <p>Je kunt contact met mij opnemen via de volgende kanalen:</p>
-    <ul>
+      <p>Je kunt contact met mij opnemen via de volgende kanalen:</p>
+      <ul>
         <li>Email: nathan.schoeters@example.com</li>
         <li>Telefoon: +32 487 45 21 0</li>
         <li>LinkedIn: linkedin.com/in/nathan-schoeters</li>
-    </ul>
-    <p>Ik sta altijd open voor nieuwe kansen, samenwerkingen of gewoon een goed gesprek over technologie en webontwikkeling. Aarzel niet om contact op te nemen!</p>
+      </ul>
+      <p>
+        Ik sta altijd open voor nieuwe kansen, samenwerkingen of gewoon een goed
+        gesprek over technologie en webontwikkeling. Aarzel niet om contact op
+        te nemen!
+      </p>
     </div>
     <h3>Ook kan je onderstaande form invullen:</h3>
-    <form action="submit_form.php" method="post">
-        <label for="name">Naam:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Bericht:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit">Verstuur</button>
+    <form method="post" action="https://tm-statweb.be/sendmail.php">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Verzenden</button>
+      <input type="hidden" name="studentemail" value="r1047119@student.thomasmore.be"/>
     </form>
-</body>
+    <footer>
+      <p>&copy; 2024 Nathan Schoeters. Alle rechten voorbehouden.</p>
+      <i class ="fa-brands fa-facebook"></i>
+      <i class ="fa-brands fa-instagram"></i>
+      <i class ="fa-brands fa-linkedin"></i>
+      <i class ="fa-brands fa-github"></i>
+      <i class ="fa-brands fa-twitter"></i>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
