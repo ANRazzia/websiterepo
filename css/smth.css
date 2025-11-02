@@ -24,7 +24,7 @@ nav {
 .nav-link:hover {
   color: #23d6e6;
   transition: 0.3s;
-  background-color: whitesmoke;
+  background-color: #00ff99;
   border-radius: 5px;
 }
 body {
@@ -33,6 +33,9 @@ body {
   margin: 0;
   padding: 20px;
   color: rgb(255, 255, 189);
+}
+.index {
+  color: lightslategray;
 }
 .descriptionlist {
   font-style: italic;
@@ -56,12 +59,14 @@ body {
   border-width: fit-content;
   border: 2px solid #23d6e6;
   padding: 10px;
+  color: rgb(255, 255, 189);
 }
 .submain {
   font-size: 16px;
   font-style: italic;
   margin-top: -10px;
   font-weight: bold;
+  color: rgb(255, 255, 189);
 }
 #profile-pic {
   display: block;
@@ -81,6 +86,7 @@ body {
   font-weight: bold;
   background-color: #23d6e67d;
   font-size: 18px;
+  color: rgb(255, 255, 189);
 }
 .project-img {
   width: 320px;
@@ -122,7 +128,31 @@ label {
   margin-top: 10px;
   font-weight: bold;
 }
+.carousel {
+  width: 100%;
+  padding: 30px 0;
+}
 
+.carousel-inner {
+  overflow: hidden;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out; /* smoother transition */
+}
+
+.carouselimg {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carouselimg:hover {
+  transform: scale(1.1);
+}
 input,
 textarea,
 button {
@@ -136,7 +166,18 @@ button {
   border-radius: 4px;
   font-size: 14px;
 }
-
+.buttonp {
+  background-color: #23d6e6cc;
+  border-radius: 5px;
+  border-spacing: 10px;
+  border-width: 120px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
 button {
   margin-top: 15px;
   cursor: pointer;
@@ -165,6 +206,49 @@ button:hover {
   padding: 34px;
   box-sizing: border-box;
 }
+#hobbies {
+  background-color: transparent;
+  color: #23d6e6cc; 
+  text-align: center;
+  padding: 60px 0; 
+}
+
+.hobby-img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.hobby-img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-caption {
+  position: static; 
+  padding-top: 10px;
+  background: transparent;
+  color: #000000cc;
+}
+
+.carousel h5 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.carousel p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.9;
+  color:rgb(11, 201, 235);
+  font-weight: bold;
+
+}
 
 header h1 {
   color: rgb(255, 255, 189);
@@ -172,10 +256,13 @@ header h1 {
   font-size: 2.2rem;
   letter-spacing: -0.02em;
 }
+.hclass {
+  color: rgb(255, 255, 189);
 
+}
 header p.lead {
   margin: 0 0 22px 0;
-  color: var(--muted);
+  color: rgb(255, 255, 189);
   font-size: 1.05rem;
 }
 
@@ -189,7 +276,7 @@ header p.lead {
 .content h2 {
   margin: 18px 0 8px 0;
   font-size: 1.15rem;
-  color: #111;
+  
 }
 
 .content p {
@@ -244,9 +331,22 @@ header p.lead {
   color: var(--muted);
 }
 footer {
-  color : rgb(255, 255, 189);
-  font-size: 12px;
-  text-align: left;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 15px; 
+  padding: 20px 0;
+  background: transparent;
+  color: rgb(255, 255, 189); 
+}
+footer i {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #00ff99; 
 }
 @media (max-width: 900px) {
   .grid {

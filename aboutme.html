@@ -12,23 +12,82 @@
   <body class="body-aboutmebody">
     <main class="container-aboutme" role="main">
       <nav>
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="projects.html"> My Projects</a>
-        <a class="nav-link" href="CV.html">CV</a>
-        <a class="nav-link" href="contact.html">Contact Me</a>
-        <a class="nav-link" href="aboutme.html">Over Mij</a>
-      </nav>
+      <a class="nav-link" href="index.html"><i class = "fa-solid fa-house"></i>Home</a>
+      <a class="nav-link" href="projects.html"><i class = "fa-solid fa-folder"></i> My Projects</a>
+      <a class="nav-link" href="CV.html"><i class = "fa-solid fa-file"></i>CV</a>
+      <a class="nav-link" href="contact.html"><i class = "fa-solid fa-envelope"></i>Contact Me</a>
+      <a class="nav-link" href="aboutme.html"><i class = "fa-solid fa-user"></i>Over Mij</a>
+    </nav>
       <header>
-        <h1>Content — hobby / interesses</h1>
-        <p class="lead">
+        <h1 class="hclass">Hobby's / interesses</h1>
+        <p class="lead" class="hclass">
           Op deze pagina vertel ik over mijn hobby's: gamen, informatica en
           krijgskunsten — wat ik leer en waarom het voor mij belangrijk is.
         </p>
       </header>
+    <section id="hobbies" class="py-5">
+  <div id="hobbiesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active text-center">
+        <img src="img/Python-logo.jpg" class="hobby-img d-block mx-auto" alt="Programming">
+        <div class="carousel-caption d-md-block">
+          <h5>Programming</h5>
+          <p>Al van kleins af aan ben ik geintrigeerd  met een eigen Jarvis te maken</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="img/dualsense.jpg" class="hobby-img d-block mx-auto" alt="Gaming">
+        <div class="carousel-caption d-md-block">
+          <h5>Gamen</h5>
+          <p>Gamen is voor mij niet alleen vrije tijd; het is een manier om te ontspannen, tegelijk te oefenen met concentratie en strategisch denken.</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="img/muziek.jpg" class="hobby-img d-block mx-auto" alt="Music">
+        <div class="carousel-caption d-md-block">
+          <h5>Muziek</h5>
+          <p>Muziek is een bron van inspiratie en ontspanning voor mij.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item text-center">
+        <img src="img/Karate-jpg.jpg" class="hobby-img d-block mx-auto" alt="Photography">
+        <div class="carousel-caption d-md-block">
+          <h5>Vechtsport</h5>
+          <p>Vechtsport helpt me om discipline en focus te ontwikkelen, zowel fysiek als mentaal.</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="img/gym.jpg" class="hobby-img d-block mx-auto" alt="Fitness">
+        <div class="carousel-caption d-md-block">
+          <h5>Fitness</h5>
+          <p>Een gezonde levensstijl is belangrijk voor mij, en ik probeer regelmatig te sporten.</p>
+        </div>
+      </div>
+      <div class="carousel-item text-center">
+        <img src="img/jogging.jpg" class="hobby-img d-block mx-auto" alt="Traveling">
+        <div class="carousel-caption d-md-block">
+          <h5>Hardlopen</h5>
+          <p>Hardlopen in de buitenlucht geeft me een gevoel van vrijheid en helpt me om mijn gedachten te ordenen.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
       <section class="grid">
         <div class="content">
-          <h2>🎮 Gamen — meer dan ontspanning</h2>
+          <h2 class="hclass">🎮 Gamen — meer dan ontspanning</h2>
           <p>
             Gamen is voor mij niet alleen vrije tijd; het is een manier om te
             ontspannen, tegelijk te oefenen met concentratie en strategisch
@@ -38,7 +97,7 @@
             waarmee je beter wordt.
           </p>
 
-          <h2>💻 Informatica — interesse en ambitie</h2>
+          <h2 class="hclass">💻 Informatica — interesse en ambitie</h2>
           <p>
             Mijn interesse ligt in de informatica sector: hoe systemen
             samenwerken, hoe code problemen oplost en hoe je nieuwe tools bouwt
@@ -54,7 +113,7 @@
             tegenwoordig digitale kennis, en ik wil daar actiever in worden.
           </p>
 
-          <h2>🥋 Krijgskunsten — discipline en focus</h2>
+          <h2 class="hclass">🥋 Krijgskunsten — discipline en focus</h2>
           <p>
             Krijgskunsten (martial arts) geven balans tussen lichaam en geest.
             De trainingen verbeteren conditie, techniek en zelfvertrouwen. Wat
@@ -63,7 +122,7 @@
             respect te tonen voor anderen.
           </p>
 
-          <h2>📌 Geleerde vaardigheden</h2>
+          <h2 class="hclass">📌 Geleerde vaardigheden</h2>
           <p>
             Deze hobby's samen geven mij vaardigheden die in het echte leven van
             pas komen:
@@ -82,24 +141,16 @@
             sterker en beter voorbereid op projecten of studie in de toekomst.
           </p>
         </div>
-        <aside class="aside" aria-label="Afbeeldingen">
-          <figure class="card">
-            <img src="img/dualsense.jpg" alt="Gaming controller" />
-            <figcaption class="caption">
-              Gamen: strategie en teamwork. (Vervang de afbeelding naar keuze.)
-            </figcaption>
-          </figure>
-
-          <figure class="card">
-            <img src="img/Karate-jpg.jpg" alt="Krijgskunsten trainen" />
-            <figcaption class="caption">
-              Krijgskunsten: discipline en kracht. (Vervang de afbeelding naar
-              keuze.)
-            </figcaption>
-          </figure>
-        </aside>
       </section>
     </main>
+    <footer>
+      <p>&copy; 2025 Nathan Schoeters. Alle rechten voorbehouden.</p>
+      <i class ="fa-brands fa-facebook"></i>
+      <i class ="fa-brands fa-instagram"></i>
+      <i class ="fa-brands fa-linkedin"></i>
+      <i class ="fa-brands fa-github"></i>
+      <i class ="fa-brands fa-twitter"></i>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
